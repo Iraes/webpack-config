@@ -1,15 +1,16 @@
-@charset "UTF-8";
 @import "~normalize.css";
 @font-face {
-  font-family: "";
-  src: url("../fonts/.woff2") format("woff2");
+  font-family: "notosans";
+  src: url("../fonts/notosans.woff2") format("woff2");
   font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
-/* Цвет таблицы */
-/* Цвет граней */
-/* Цвет элементов заголовка */
+:root {
+  --color-black: #000;
+  --color-white: #fff;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -27,49 +28,13 @@ body {
   scroll-behavior: smooth;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-  margin: 0;
-  padding: 0;
-}
-
 img {
-  height: auto;
   max-width: 100%;
-  object-fit: cover;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 
 a {
   text-decoration: none;
   color: inherit;
-}
-
-input,
-textarea {
-  width: 100%;
-}
-
-textarea {
-  resize: none;
-}
-
-/*Меняем цвет плейсхолдера в инпуте Сафари и Хром*/
-/*Меняем цвет плейсхолдера в инпуте для Мозилы */
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder,
-input::-moz-placeholder,
-textarea::-moz-placeholder {
-  color: #cacaca;
-}
-
-input:focus,
-textarea:focus {
-  outline: none;
 }
 
 .site-container {
@@ -91,14 +56,17 @@ textarea:focus {
   overflow: hidden;
 }
 
-.btn:active, .btn:focus {
-  outline: none;
-}
 .btn-reset {
   border: none;
   padding: 0;
   background: transparent;
   cursor: pointer;
+}
+
+.list-reset {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -111,8 +79,10 @@ textarea:focus {
   outline: none;
 }
 
-.error {
-  border: 2px #ff0000 solid !important;
+body {
+  background-color: red;
+  background-image: url("../img/2.jpg");
+  color: red;
 }
 
 /*# sourceMappingURL=main.css.map */

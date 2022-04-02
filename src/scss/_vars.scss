@@ -1,20 +1,4 @@
-$white: #fff;
-$light-gray: #efefef;
-$soft-gray: #ececec;
-$gray: #cacaca;
-$table-background: #6d6d6d;
-$error-red: #ff0000;
-$error-red-prehover: #ff7a7a;
-$orange-btn: #ff9900;
-$green-confirm: #009e1a;
-$link-color: #0d6efd;
-$link-color--hover: #003f9c;
-$dark-gray: #222222;
-$dark-input: #414141;
-$dark: #212529;
-$black: #000;
-
-
-$background-table-color: #616161; /* Цвет таблицы */
-$border-color: #b2dfdb; /* Цвет граней */
-$th-color: #fbc02d; /* Цвет элементов заголовка */
+:root {
+  --color-black: #000;
+  --color-white: #fff;
+}
