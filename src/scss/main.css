@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import "~normalize.css";
 @font-face {
   font-family: "notosans";
@@ -6,11 +7,9 @@
   font-display: swap;
   font-style: normal;
 }
-:root {
-  --color-black: #000;
-  --color-white: #fff;
-}
-
+/* Цвет таблицы */
+/* Цвет граней */
+/* Цвет элементов заголовка */
 html {
   box-sizing: border-box;
 }
@@ -21,15 +20,17 @@ html {
   box-sizing: inherit;
 }
 
-body {
-  overflow-anchor: none;
-  font-family: "asd", sans-serif;
-  background-color: var(--color-white);
-  scroll-behavior: smooth;
+*:focus {
+  outline: 2px solid transparent;
 }
 
-img {
-  max-width: 100%;
+body {
+  overflow-anchor: none;
+  margin: 0;
+  font-family: "Barlow", sans-serif;
+  color: #1B1C21;
+  background-color: #F8F8F8;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -37,52 +38,87 @@ a {
   color: inherit;
 }
 
-.site-container {
-  overflow: hidden;
-}
-
-.is-hidden {
-  display: none !important;
-}
-
-.visually-hidden {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0 !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
-  overflow: hidden;
-}
-
-.btn-reset {
-  border: none;
-  padding: 0;
-  background: transparent;
-  cursor: pointer;
-}
-
-.list-reset {
-  list-style-type: none;
+h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   padding: 0;
 }
 
-.container {
-  margin: 0 auto;
-  padding: 0 15px;
-  max-width: 1200px;
+img {
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
 }
 
-.js-focus-visible :focus:not(.focus-visible) {
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+input,
+textarea {
+  width: 100%;
+}
+
+textarea {
+  resize: none;
+}
+
+/*Меняем цвет плейсхолдера в инпуте Сафари и Хром*/
+/*Меняем цвет плейсхолдера в инпуте для Мозилы */
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder,
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #cacaca;
+}
+
+input:focus,
+textarea:focus {
   outline: none;
 }
 
-body {
-  background-color: red;
-  background-image: url("../img/2.jpg");
-  color: red;
+footer {
+  background: #1B1C21;
+}
+
+.is--hidden {
+  display: none !important;
+}
+
+.btn--reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn:active,
+.btn:focus {
+  outline: none;
+}
+
+.error {
+  border: 2px var(--error-red) solid !important;
+}
+
+.container {
+  max-width: 1810px;
+  margin: 0 auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+@media (max-width: 1200px) {
+  .container {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

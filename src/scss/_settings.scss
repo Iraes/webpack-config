@@ -9,7 +9,7 @@ html {
 }
 
 *:focus{
-  outline: 2px solid $blue;
+  outline: 2px solid transparent;
 }
 
 body {
@@ -26,13 +26,15 @@ a {
   color: inherit;
 }
 
-p {
+h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   padding: 0;
 }
 
 img {
+  height: auto;
   max-width: 100%;
+  object-fit: cover;
 }
 
 ul {
@@ -69,7 +71,7 @@ footer {
 }
 
 .is--hidden {
-  display: none !important; // stylelint-disable-line declaration-no-important
+  display: none !important;
 }
 
 .btn--reset {
