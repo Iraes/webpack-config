@@ -12,9 +12,9 @@
   "author": "Iraes",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.17.8",
-    "@babel/preset-env": "^7.16.11",
-    "babel-loader": "^8.2.4",
+    "@babel/core": "^7.17.10",
+    "@babel/preset-env": "^7.17.10",
+    "babel-loader": "^8.2.5",
     "copy-webpack-plugin": "^10.2.4",
     "cross-env": "^7.0.3",
     "css-loader": "^6.7.1",
@@ -32,9 +32,9 @@
     "node-sass": "^7.0.1",
     "sass-loader": "^12.6.0",
     "terser-webpack-plugin": "^5.3.1",
-    "webpack": "^5.70.0",
+    "webpack": "^5.72.0",
     "webpack-cli": "^4.9.2",
-    "webpack-dev-server": "^4.7.4"
+    "webpack-dev-server": "^4.9.0"
   },
   "dependencies": {
     "focus-visible": "^5.2.0",
